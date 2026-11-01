@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GATRALOCA — Angkatan 58</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="#home" class="brand">GATRALOCA</a>
+  <button id="menuToggle">☰</button>
+  <div class="nav-links" id="navLinks">
+    <a href="#home">Beranda</a>
+    <a href="#jurusan">Dokumentasi Jurusan</a>
+    <a href="#film">Film Angkatan</a>
+    <a href="#flashmob">Flashmob</a>
+  </div>
+</nav>
+
+<header class="hero" id="home">
+  <div class="hero-content">
+    <p class="eyebrow">SMK · ANGKATAN KE-58</p>
+    <h1>GATRA<span>LOCA</span></h1>
+    <p>Satu angkatan, ribuan cerita, dan kenangan yang akan selalu punya tempat.</p>
+
+    <div class="hero-buttons">
+      <a href="#jurusan" class="btn gold">Jelajahi Dokumentasi</a>
+      <a href="#film" class="btn outline">Film Angkatan</a>
+    </div>
+
+    <div class="hero-photo">
+      <img id="heroImage" alt="Foto Angkatan" hidden>
+      <div id="heroPlaceholder">
+        <h2>GATRALOCA 58</h2>
+        <p>Foto Bersama Angkatan</p>
+      </div>
+    </div>
+
+    <label class="upload-label">
+      + Unggah Foto Angkatan
+      <input type="file" id="heroUpload" accept="image/*">
+    </label>
+  </div>
+</header>
+
+<section class="section" id="jurusan">
+  <div class="container">
+    <p class="eyebrow">01 / Memories by Major</p>
+    <h2>Dokumentasi Per-Jurusan</h2>
+    <p class="description">
+      Setiap jurusan memiliki cerita dan kenangan masing-masing.
+    </p>
+
+    <div class="class-grid">
+
+      <div class="class-card">
+        <div class="card-image">
+          <img alt="DPIB" hidden>
+          <span>01</span>
+        </div>
+        <div class="card-content">
+          <h3>DPIB</h3>
+          <p>Desain Pemodelan dan Informasi Bangunan.</p>
+          <button class="view-gallery">Lihat Foto</button>
+          <label class="upload-label">
+            + Tambah Foto
+            <input type="file" accept="image/*" multiple>
+          </label>
+        </div>
+      </div>
+
+      <div class="class-card">
+        <div class="card-image">
+          <img alt="TKJ" hidden>
+          <span>02</span>
+        </div>
+        <div class="card-content">
+          <h3>TKJ</h3>
+          <p>Teknik Komputer dan Jaringan.</p>
+          <button class="view-gallery">Lihat Foto</button>
+          <label class="upload-label">
+            + Tambah Foto
+            <input type="file" accept="image/*" multiple>
+          </label>
+        </div>
+      </div>
+
+      <div class="class-card">
+        <div class="card-image">
+          <img alt="TPM" hidden>
+          <span>03</span>
+        </div>
+        <div class="card-content">
+          <h3>TPM</h3>
+          <p>Teknik Pemesinan.</p>
+          <button class="view-gallery">Lihat Foto</button>
+          <label class="upload-label">
+            + Tambah Foto
+            <input type="file" accept="image/*" multiple>
+          </label>
+        </div>
+      </div>
+
+      <div class="class-card">
+        <div class="card-image">
+          <img alt="TKR" hidden>
+          <span>04</span>
+        </div>
+        <div class="card-content">
+          <h3>TKR</h3>
+          <p>Teknik Kendaraan Ringan.</p>
+          <button class="view-gallery">Lihat Foto</button>
+          <label class="upload-label">
+            + Tambah Foto
+            <input type="file" accept="image/*" multiple>
+          </label>
+        </div>
+      </div>
+
+      <div class="class-card">
+        <div class="card-image">
+          <img alt="TITL" hidden>
+          <span>05</span>
+        </div>
+        <div class="card-content">
+          <h3>TITL</h3>
+          <p>Teknik Instalasi Tenaga Listrik.</p>
+          <button class="view-gallery">Lihat Foto</button>
+          <label class="upload-label">
+            + Tambah Foto
+            <input type="file" accept="image/*" multiple>
+          </label>
+        </div>
+      </div>
+
+      <div class="class-card">
+        <div class="card-image">
+          <img alt="TEI" hidden>
+          <span>06</span>
+        </div>
+        <div class="card-content">
+          <h3>TEI</h3>
+          <p>Teknik Elektronika Industri.</p>
+          <button class="view-gallery">Lihat Foto</button>
+          <label class="upload-label">
+            + Tambah Foto
+            <input type="file" accept="image/*" multiple>
+          </label>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section dark" id="film">
+  <div class="container">
+    <p class="eyebrow">02 / A Story to Remember</p>
+    <h2>Film Angkatan</h2>
+
+    <div class="film-card">
+      <div class="film-cover">
+        <span>▶</span>
+      </div>
+
+      <div class="film-content">
+        <h3>Our Generation, Our Story.</h3>
+        <p>
+          Sebuah karya yang merangkum perjalanan,
+          persahabatan, dan cerita GATRALOCA.
+        </p>
+
+        <input
+          type="url"
+          id="filmLink"
+          placeholder="Masukkan link film YouTube"
+        >
+
+        <a href="#" target="_blank" id="watchFilm" class="btn gold">
+          Tonton Film
+        </a>
+
+        <h4>Dokumentasi Produksi Film</h4>
+        <label class="upload-label">
+          + Tambah Foto
+          <input type="file" id="filmPhotos" accept="image/*" multiple>
+        </label>
+
+        <div class="gallery" id="filmGallery"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="flashmob">
+  <div class="container">
+    <p class="eyebrow">03 / One Rhythm, One Generation</p>
+    <h2>Flashmob Angkatan</h2>
+    <p class="description">
+      Satu gerakan, satu irama, satu kenangan.
+    </p>
+
+    <div class="flash-grid" id="flashGrid">
+      <div class="flash-tile">Moment 01</div>
+      <div class="flash-tile">Moment 02</div>
+      <div class="flash-tile">Moment 03</div>
+    </div>
+
+    <label class="btn outline upload-button">
+      + Unggah Foto Flashmob
+      <input type="file" id="flashUpload" accept="image/*" multiple>
+    </label>
+  </div>
+</section>
+
+<footer>
+  <h3>GATRALOCA · 58</h3>
+  <p>Berbeda kelas, satu cerita.</p>
+  <p>© GATRALOCA</p>
+</footer>
+
+<div class="modal" id="galleryModal">
+  <div class="modal-content">
+    <button id="closeModal">Tutup ✕</button>
+    <h2 id="modalTitle">Dokumentasi Jurusan</h2>
+    <div class="gallery" id="modalGallery"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
